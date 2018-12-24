@@ -71,5 +71,3 @@ Query variables
   "meal": "pre-lunch"
 }
 ```
-
-
