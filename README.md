@@ -1,6 +1,6 @@
 # food-api
 
-1) Basic, querying exactly what you need, by passing food id in query variables section
+1) Querying exactly what you need, by passing food id in query variables section
 
 Query
 ```
