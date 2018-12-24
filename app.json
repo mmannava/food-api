@@ -1,7 +1,0 @@
-{
-  "name": "food-api",
-  "description": "graphql express nodejs app",
-  "repository": "https://github.com/mmannava/food-api",
-  "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs"
-}
