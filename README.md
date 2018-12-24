@@ -71,3 +71,11 @@ Query variables
   "meal": "pre-lunch"
 }
 ```
+This api is deployed using heroku 
+```
+[Food-API](https://food-api-mmannava.herokuapp.com/)
+```
+```
+Click Here to execute queries to get and update the api
+[Food-API](https://food-api-mmannava.herokuapp.com/graphql)
+```
