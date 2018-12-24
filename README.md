@@ -19,3 +19,32 @@ Query variables
 }
 
 ```
+2) Query with fragments by assigning aliases. This helps to get multiple query results in a single go
+
+Query
+```
+query getFoodWithFragments($foodID1: Int!, $foodID2: Int!) {
+      food1: food(id: $foodID1) {
+             ...foodFields
+      },
+      food2: food(id: $foodID2) {
+            ...foodFields
+      } 
+}
+
+fragment foodFields on Food {
+  meal
+  carbs
+  proteins
+  fats
+}
+```
+Query variables:
+```
+{ 
+    "foodID1":1,
+    "foodID2":2
+}
+```
+
+
