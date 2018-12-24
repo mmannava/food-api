@@ -1,6 +1,10 @@
 var express = require('express');
 var express_graphql = require('express-graphql');
+const cors = require('cors');
 var { buildSchema } = require('graphql');
+const app = express();
+
+require('dotenv').config();
 // GraphQL schema for node express 
 var schema = buildSchema(`
     type Query {
@@ -79,10 +83,13 @@ var root = {
     updateFoodMeal: updateFoodMeal
 };
 // Create an express server and a GraphQL endpoint
-var app = express();
+
 app.use('/graphql', express_graphql({
     schema: schema,
     rootValue: root,
     graphiql: true
 }));
-app.listen(4000, () => console.log('Food-api GraphQL Server Now Running On localhost:4000/graphql'));
+
+app.use('/', (req, res) => res.send("Welcome To Manasa Mannava's Food API"));
+
+app.listen(process.env.PORT, () => console.log('Food API Server is ready on localhost:' + process.env.PORT +'/graphql'));
