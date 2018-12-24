@@ -2,7 +2,7 @@
 
 1) Basic, querying exactly what you need, by passing food id in query variables section
 
-Query:
+Query
 ```
 query getSingleFood($foodID: Int!) {
   food(id: $foodID) {
@@ -40,11 +40,35 @@ fragment foodFields on Food {
   fats
 }
 ```
-Query variables:
+Query variables
 ```
 { 
     "foodID1":1,
     "foodID2":2
+}
+```
+3) Using mutations to update the meal of the food
+
+Query
+```
+mutation updateFoodMeal($id: Int!, $meal: String!) {
+  updateFoodMeal(id: $id, meal: $meal) {
+    ... foodFields
+  }
+}
+
+fragment foodFields on Food {
+  meal
+  carbs
+  proteins
+  fats
+}
+```
+Query variables
+```
+{
+  "id": 1,
+  "meal": "pre-lunch"
 }
 ```
 
