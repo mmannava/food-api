@@ -1,8 +1,0 @@
-{
-  "name": "food api",
-  "description": "a graphql express nodejs api",
-  "repository": "https://github.com/mmannava/food-api",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs"
-}
