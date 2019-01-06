@@ -1,4 +1,5 @@
 ## FOOD-API
+This is an express graphql api
 
 ### Concepts Illustrated
 * Javascript
