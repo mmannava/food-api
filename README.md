@@ -1,4 +1,4 @@
-### food-api
+## FOOD-API
 
 1) Querying exactly what you need, by passing food id in query variables section
 
