@@ -7,7 +7,7 @@ This is an express graphql api
 * Source control using Git
 * deployed on heroku cloud environment
 
-
+## API Documentation
 1) Querying exactly what you need, by passing food id in query variables section
 
 Query
