@@ -1,5 +1,12 @@
 ## FOOD-API
 
+### Concepts Illustrated
+* Javascript
+* GraphQL-based API
+* Source control using Git
+* deployed on heroku cloud environment
+
+
 1) Querying exactly what you need, by passing food id in query variables section
 
 Query
